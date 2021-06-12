@@ -8,7 +8,7 @@ using WebAPI.Service;
 
 namespace WebAPI.Config
 {
-    public class DIContainer
+    public static class DIContainer
     {
         public static void Integrate(IServiceCollection service, IConfiguration Configuration)
         {

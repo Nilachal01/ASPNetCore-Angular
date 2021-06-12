@@ -21,6 +21,7 @@ namespace WebAPI.Controllers
         public HomeController(IConfiguration connectionStrings)
         {
             _connectionString = connectionStrings.GetConnectionString("DBConnectionForOpsArc");
+
         }
     }
 }

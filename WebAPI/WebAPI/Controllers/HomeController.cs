@@ -23,5 +23,6 @@ namespace WebAPI.Controllers
             _connectionString = connectionStrings.GetConnectionString("DBConnectionForOpsArc");
 
         }
+       
     }
 }

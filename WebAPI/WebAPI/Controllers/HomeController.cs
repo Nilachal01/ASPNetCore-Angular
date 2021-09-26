@@ -10,7 +10,7 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class HomeController : ControllerBase
+    public class HomeController : Controller
     {
         private readonly string _connectionString;
 
@@ -22,6 +22,11 @@ namespace WebAPI.Controllers
         {
             _connectionString = connectionStrings.GetConnectionString("DBConnectionForOpsArc");
 
+        }
+        [HttpGet]
+        public IActionResult GetData()
+        {
+            return View();
         }
        
     }

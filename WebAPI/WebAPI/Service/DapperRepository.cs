@@ -21,9 +21,7 @@ namespace WebAPI.Service
                     activeConn.Open();
                     //var p = new Dapper.DynamicParameters();
                     //p.Add("@Name", Name, dbType: DbType.String);
-                    //p.Add("@Type", Type, dbType: DbType.String);
-                    //p.Add("@Code", Code, dbType: DbType.String);
-                    //p.Add("@Parent", Parent, dbType: DbType.String);
+                    
                     listJobOrder.thisList = activeConn.Query<dynamic>("TestProcInitial", commandType: System.Data.CommandType.StoredProcedure).ToList();
                 }
                 return listJobOrder;
